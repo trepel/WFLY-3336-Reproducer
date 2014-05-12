@@ -1,6 +1,6 @@
 <jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
     <deployment>
-        <!-- <dependencies>
+        <dependencies>
             <module name="org.springframework.spring" slot="main" export="true">
                 <exports>
                     <include path="META-INF**"/>
@@ -11,7 +11,7 @@
                     <include path="org**"/>
                 </imports>
             </module>
-        </dependencies> -->
+        </dependencies>
     </deployment>
 
 </jboss-deployment-structure>
