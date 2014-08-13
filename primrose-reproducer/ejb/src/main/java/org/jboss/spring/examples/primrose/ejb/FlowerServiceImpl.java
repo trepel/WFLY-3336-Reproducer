@@ -10,12 +10,11 @@ import org.jboss.spring.examples.primrose.dao.FlowerDao;
 import org.jboss.spring.examples.primrose.entity.Flower;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ejb.interceptor.SpringBeanAutowiringInterceptor;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 @Stateless
 @Local(FlowerService.class)
 @Interceptors(SpringBeanAutowiringInterceptor.class)
-public class FlowerServiceImpl extends SpringBeanAutowiringSupport implements FlowerService
+public class FlowerServiceImpl implements FlowerService
 {
    @Autowired
    private FlowerDao flowerDao;
