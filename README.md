@@ -17,8 +17,8 @@ If you have Spring installed as static module, you need to do following to make 
  * you need to create jandex index at least for this jar
 * There are two ways to do it:
  * first: add jandex.idx into spring-context.jar/META-INF directory
- * second: create separate jandex.idx.jar file with content: /META-INF/jandex.idx and modify the module.xml accordingly (add line <resource-root path="jandex.idx.jar"/>)
-* You can generate jandex.idx file using $WILDFLY_HOME/modules/system/layers/base/org/jboss/jandex/main/jandex-version.jar
+ * second: create separate jandex.idx.jar file with content: /META-INF/jandex.idx and modify the module.xml accordingly (add line &lt;resource-root path="jandex.idx.jar"/&gt;)
+* You can generate jandex.idx file using $WILDFLY_HOME/modules/system/layers/base/org/jboss/jandex/main/jandex-&lt;version$gt;.jar
 
 
 
